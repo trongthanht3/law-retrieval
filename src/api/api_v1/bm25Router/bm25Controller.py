@@ -1,5 +1,6 @@
 import structlog
 import pandas as pd
+import numpy as np
 from underthesea import word_tokenize
 from utils.utils import pre_process
 from time import time
@@ -18,7 +19,7 @@ bm25 = pickle.load(open(BM25_MODEL_PATH, 'rb'))
 df_corpus = pd.read_csv(CORPUS_PATH, dtype={"url": str, "description": str, "law_name": str, "law_id": str,
                                             "article_id": int, "article_name": str, "article_content": str,
                                             "expDate": str, "isExpire": str, "is_zalo": bool, "combine": str,
-                                            "is_non_url": bool})
+                                            "is_non_url": bool}, index_col=0)
 df_corpus_columns = df_corpus.columns
 only_text = df_corpus['combine']
 load_time_end = time()-load_time_start
@@ -27,10 +28,11 @@ logger.info(f"BM25 model loaded in {load_time_end} seconds")
 
 
 def bm25_query(query, top_n=30):
+    res = []
     tokenized_query = word_tokenize(query)
     docs = bm25.get_top_n(tokenized_query, only_text, n=top_n)
-
-    return docs
+    res = [x for x in docs if str(x) != 'nan']
+    return res
 
 
 def get_result_info(docs):

@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import json
 
 from api.api_v1.sbertRouter import sbertController
 from api.api_v1.bm25Router import bm25Controller
@@ -14,5 +15,8 @@ def law_retrieval(query, top_n):
     bm25res_full_info = bm25Controller.get_result_info(bm25res)
 
     cosin_scores = sbertController.encode_data([query], bm25res)
+    print(len(bm25res_full_info), len(cosin_scores[0]))
+    bm25res_full_info['score'] = cosin_scores[0]
+    bm25res_full_info = bm25res_full_info.sort_values("score")
 
-    return cosin_scores
+    return json.loads(bm25res_full_info.to_json(orient='records'))

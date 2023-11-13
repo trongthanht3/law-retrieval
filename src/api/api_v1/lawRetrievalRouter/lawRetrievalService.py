@@ -20,4 +20,4 @@ async def _law_retrieval(payload: QueryInput, request: Request):
         await logger.error(e)
         res = e
 
-    return {res: res}
+    return res
