@@ -1,10 +1,8 @@
-import logging
 import os
 from urllib import parse
 from starlette.datastructures import Secret
 from starlette.config import Config
 
-log = logging.getLogger(__name__)
 
 print("WHERE AM I:", os.getcwd())
 
@@ -24,3 +22,8 @@ _QUOTED_DATABASE_PASSWORD = parse.quote(str(_DATABASE_CREDENTIAL_PASSWORD))
 DATABASE_NAME = config("DATABASE_NAME", default="dispatch")
 DATABASE_HOST = config("DATABASE_HOST", default="localhost")
 DATABASE_PORT = config("DATABASE_PORT", default="5432")
+CORPUS_PATH = config("CORPUS_PATH", default="src/database/law_corpus.csv")
+
+# ML model
+BM25_MODEL_PATH = config("BM25_MODEL_PATH", default="bm25_model")
+BM25_ONLY_TEXT_PATH = config("BM25_ONLY_TEXT_PATH", default="bm25_model")

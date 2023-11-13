@@ -123,3 +123,5 @@ dist
 .idea
 __pycache__/
 venv/
+src/models/*
+src/database/*.csv

@@ -6,7 +6,6 @@ from src.config import (
     DATABASE_NAME,
     DATABASE_HOST,
     DATABASE_PORT,
-
 )
 
 pgs_qldb = PostgresqlDatabase(DATABASE_HOSTNAME, user=_DATABASE_CREDENTIAL_USER,
