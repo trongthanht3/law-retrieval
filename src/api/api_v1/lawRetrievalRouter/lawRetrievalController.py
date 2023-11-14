@@ -17,6 +17,6 @@ def law_retrieval(query, top_n):
     cosin_scores = sbertController.encode_data([query], bm25res)
     print(len(bm25res_full_info), len(cosin_scores[0]))
     bm25res_full_info['score'] = cosin_scores[0]
-    bm25res_full_info = bm25res_full_info.sort_values("score")
+    bm25res_full_info = bm25res_full_info.sort_values("score", ascending=False)
 
     return json.loads(bm25res_full_info.to_json(orient='records'))
