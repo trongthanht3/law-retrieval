@@ -11,6 +11,10 @@ from config import (
 )
 
 def law_retrieval(query, top_n):
+    pre_search = bm25Controller.pre_search(query)
+    if pre_search is not None:
+        pre_search['score'] = 1
+        return json.loads(pre_search.to_json(orient='records'))
     bm25res = bm25Controller.bm25_query(query, top_n)
     bm25res_full_info = bm25Controller.get_result_info(bm25res)
 

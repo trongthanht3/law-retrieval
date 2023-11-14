@@ -53,7 +53,8 @@ if __name__ == "__main__":
         port=5000,
         log_level="info",
         reload=True,
-        reload_dirs=["."],
+        reload_dirs=["./src"],
+        reload_excludes=["./streamlit/*"]
     )
 
 
