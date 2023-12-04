@@ -2,8 +2,13 @@ import streamlit as st
 import requests
 import pandas as pd
 import re
+from streamlit_extras.stateful_button import button
+from streamlit_modal import Modal
+
+import streamlit.components.v1 as components
 
 st.title('Law Retrieval - Hỗ trợ tra cứu văn bản quy phạm pháp luật Việt Nam ⚖')
+
 
 def pre_process(text):
     """
@@ -29,8 +34,36 @@ def pre_process(text):
     text = text.lower()
     return text
 
-main_container = st.container()
 
+main_container = st.container()
+st.markdown("""
+                <html>
+                    <head>
+                    <style>
+                        ::-webkit-scrollbar {
+                            width: 30px;
+                            }
+
+                            /* Track */
+                            ::-webkit-scrollbar-track {
+                            background: #f1f1f1;
+                            }
+
+                            /* Handle */
+                            ::-webkit-scrollbar-thumb {
+                            background: #888;
+                            }
+
+                            /* Handle on hover */
+                            ::-webkit-scrollbar-thumb:hover {
+                            background: #555;
+                            }
+                    </style>
+                    </head>
+                    <body>
+                    </body>
+                </html>
+                """, unsafe_allow_html=True)
 customized_button = st.markdown("""
             <style >
             .stDownloadButton, div.stButton {text-align:center}
@@ -51,13 +84,16 @@ customized_button = st.markdown("""
 
 if 'result' not in st.session_state:
     st.session_state['result'] = pd.DataFrame()
+    st.session_state['id_query'] = None
 
 if 'removeFullExpire' not in st.session_state:
     st.session_state['removeFullExpire'] = False
 
+
 # def checkRemoveFullExpire():
 #     st.session_state['removeFullExpire'] = True
 
+@st.cache_data
 def queryAPI(query):
     url = "http://localhost:5000/api/v1/lawRetrievalRouter/lawRetrieval"
     payload = {
@@ -65,7 +101,20 @@ def queryAPI(query):
         "top_n": 100
     }
     response = requests.request("POST", url, json=payload)
-    st.session_state['result'] = response.json()
+    st.session_state['result'] = response.json()['data']
+    st.session_state['id'] = response.json()['id']
+    return response.json()
+
+
+def feedbackAPI(query_id, law_id, article_id, user_label):
+    url = "http://localhost:5000/api/v1/lawRetrievalRouter/userFeedback"
+    payload = {
+        "query_id": query_id,
+        "law_id": law_id,
+        "article_id": article_id,
+        "user_label": user_label
+    }
+    response = requests.request("POST", url, json=payload)
     return response.json()
 
 
@@ -84,27 +133,46 @@ with main_container:
     N_cards_per_row = 1
     if search_bar_text != '':
         queryAPI(search_bar_text)
-        main_container.subheader('Kết quả tra cứu')
-        df_result = pd.json_normalize(st.session_state['result'])
-        df_result.dropna(subset=['law_name'], inplace=True)
-        for n_row, row in df_result.reset_index().iterrows():
-            if st.session_state.removeFullExpire:
-                if row['isExpire'] == "Trạng thái:Hết hiệu lực toàn bộ":
-                    continue
-            i = n_row % N_cards_per_row
-            if i == 0:
-                st.write("---")
-                cols = st.columns(N_cards_per_row, gap="large")
-            # draw the card
-            with cols[n_row % N_cards_per_row]:
-                st.markdown(f"#### :blue[{str(row['law_name']).strip()}] - {str(row['description']).strip()}")
-                if row['isExpire'] == "Trạng thái:Hết hiệu lực toàn bộ":
-                    st.caption(
-                        f":green[{str(row['expDate']).replace(':', ': ').strip()}] - :red[{str(row['isExpire']).replace(':', ': ').strip()}]")
-                else:
-                    st.caption(
-                        f":green[{str(row['expDate']).replace(':', ': ').strip()}] - :green[{str(row['isExpire']).replace(':', ': ').strip()}]")
-                st.caption(f"{str(row['url']).strip()}")
-                st.markdown(f"**{str(row['article_name']).strip()}**")
-                st.markdown(f"*{str(row['article_content']).strip()}*")
-                st.markdown(f"*Độ tương quan: {row['score']}*")
+        if st.session_state['result'] == []:
+            main_container.subheader("Không tìm thấy kết quả 🥲")
+        else:
+            main_container.subheader('Kết quả tra cứu')
+            df_result = pd.json_normalize(st.session_state['result'])
+            df_result.dropna(subset=['law_name'], inplace=True)
+            for n_row, row in df_result.reset_index().iterrows():
+                if st.session_state.removeFullExpire:
+                    if row['isExpire'] == "Trạng thái:Hết hiệu lực toàn bộ":
+                        continue
+                i = n_row % N_cards_per_row
+                if i == 0:
+                    st.write("---")
+                    cols = st.columns(N_cards_per_row, gap="large")
+                # draw the card
+                with cols[n_row % N_cards_per_row]:
+                    st.markdown(f"#### :blue[{str(row['law_name']).strip()}] - {str(row['description']).strip()}")
+                    if row['isExpire'] == "Trạng thái:Hết hiệu lực toàn bộ":
+                        st.caption(
+                            f":green[{str(row['expDate']).replace(':', ': ').strip()}] - :red[{str(row['isExpire']).replace(':', ': ').strip()}]")
+                    else:
+                        st.caption(
+                            f":green[{str(row['expDate']).replace(':', ': ').strip()}] - :green[{str(row['isExpire']).replace(':', ': ').strip()}]")
+                    st.caption(f"{str(row['url']).strip()}")
+                    st.markdown(f"**{str(row['article_name']).strip()}**")
+                    st.markdown(f"*{str(row['article_content']).strip()}*")
+                    button_key_count = n_row
+                    score_col, feedback_col_positive, feedback_col_negative = st.columns(spec=(6, 1, 1))
+                    with score_col:
+                        st.markdown(f"*Độ tương quan: {row['score']}*")
+                    with feedback_col_positive:
+                        if st.button("👍", type="secondary", on_click=feedbackAPI, help="Văn bản này là chính xác",
+                                     args=(
+                                         st.session_state['id'], row['law_id'], row['article_id'], True),
+                                     key=f"positive_{n_row}"):
+                            score_col.markdown(":green[Feedback thành công, cảm ơn bạn đã đóng góp!] 👍🏼👍🏼👍🏼")
+                    with feedback_col_negative:
+                        if st.button("👎", type="secondary", args=(
+                            st.session_state['id'], row['law_id'], row['article_id'], False),
+                                     help="Văn bản này chưa chính xác", key=f"negative_{n_row}"):
+                            score_col.markdown(":green[Feedback thành công, cảm ơn bạn đã đóng góp!] 👍🏼👍🏼👍🏼")
+                    # if button_status:
+                    #     st.markdown(":green[Feedback thành công, cảm ơn bạn đã đóng góp!]")

@@ -5,14 +5,20 @@ from underthesea import word_tokenize
 from utils.utils import pre_process, no_accent_vietnamese
 from time import time
 
+
 import pickle
 from config import (
     BM25_MODEL_PATH,
     CORPUS_PATH,
-    BM25_ONLY_TEXT_PATH
+    BM25_ONLY_TEXT_PATH,
+    DATABASE_HOSTNAME,
+    _DATABASE_CREDENTIAL_USER, _DATABASE_CREDENTIAL_PASSWORD,
+    DATABASE_NAME,
+    DATABASE_HOST, DATABASE_PORT
 )
 
 logger = structlog.get_logger()
+
 
 load_time_start = time()
 bm25 = pickle.load(open(BM25_MODEL_PATH, 'rb'))
@@ -41,7 +47,7 @@ def pre_search(query):
     for description in pre_search_description:
         q = no_accent_vietnamese(str(query).lower())
         d = 'luat ' + no_accent_vietnamese(str(description).lower())
-        if q in d and len(d.split(" ")) <= 3*len(q.split(" ")):
+        if q in d and len(d.split(" ")) <= 3 * len(q.split(" ")):
             return df_corpus[df_corpus['description'] == description]
 
 
@@ -50,6 +56,7 @@ def bm25_query(query, top_n=30):
     docs = bm25.get_top_n(tokenized_query, only_text, n=top_n)
     res = [x for x in docs if str(x) != 'nan']
     return res
+
 
 def bm25_query_with_score(query, top_n=30):
     tokenized_query = word_tokenize(query)
@@ -63,6 +70,7 @@ def get_result_info(docs):
         result = pd.concat([result, df_corpus[df_corpus['combine'] == doc][:1]], ignore_index=True)
     result.drop(columns=['combine', 'is_zalo', 'is_non_url'], inplace=True)
     return result
+
 
 def get_result_info_by_ids(ids):
     result = df_corpus.iloc[ids]
