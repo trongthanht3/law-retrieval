@@ -8,6 +8,7 @@ from api.api_v1.bm25Router import bm25Controller
 from utils.utils import pre_process
 from database.db_connect import session
 from database.models.user_feedback import UserFeedback
+from database.models.query import Query
 
 from config import (
     RANGE_SCORE
@@ -47,7 +48,17 @@ def law_retrieval(query, top_n):
     # bm25res_full_info['score'] = cosin_scores[0]
     # bm25res_full_info = bm25res_full_info.sort_values("score", ascending=False)
 
-    return json.loads(bm25res_full_info.to_json(orient='records')), json.loads(list_law_id.to_json(orient='records'))
+    # list_id_corpus_database = []
+    # for idx, row in bm25res_full_info.iterrows():
+    #     session
+
+    user_query = Query(query=query, relevant_documents=str(json.loads(list_law_id.to_json(orient='records'))))
+    session.add(user_query)
+    session.commit()
+    session.flush()
+    session.refresh(user_query)
+
+    return user_query, json.loads(bm25res_full_info.to_json(orient='records'))
 
 def user_feedback(query_id, law_id, article_id, user_label):
     user_feedback = UserFeedback(law_id=law_id, article_id=article_id, user_label=user_label, query_id=query_id)

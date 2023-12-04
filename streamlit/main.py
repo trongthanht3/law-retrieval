@@ -17,11 +17,7 @@ def pre_process(text):
     :return: string
     """
     text = str(text)
-    text = re.sub('((www\.[^\s]+)|(https?://[^\s]+))', 'URL', text)
-    text = re.sub('@[^\s]+', 'AT_ABC', text)
     text = re.sub(r'\n', ' ', text)
-    text = re.sub(r'([\w]+\) )', '.', text)
-    text = re.sub(r'([\d]+\. )', '', text)
     text = re.sub(
         r'[^aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0-9., ]',
         '', text)
@@ -94,11 +90,11 @@ if 'removeFullExpire' not in st.session_state:
 #     st.session_state['removeFullExpire'] = True
 
 @st.cache_data
-def queryAPI(query):
+def queryAPI(query, top_n=10):
     url = "http://localhost:5000/api/v1/lawRetrievalRouter/lawRetrieval"
     payload = {
         "query": f"{query}",
-        "top_n": 100
+        "top_n": top_n
     }
     response = requests.request("POST", url, json=payload)
     st.session_state['result'] = response.json()['data']
@@ -119,11 +115,13 @@ def feedbackAPI(query_id, law_id, article_id, user_label):
 
 
 with main_container:
-    inputText_col, submitButton_col = main_container.columns(spec=(8, 2))
+    inputText_col, number_of_result_col, submitButton_col = main_container.columns(spec=(8, 2, 2))
     res = ""
     with inputText_col:
-        search_bar_text = st.text_input('Tìm kiếm luật', '')
+        search_bar_text = st.text_input('Tìm kiếm văn bản', '')
         st.checkbox("Bỏ văn bản hết hiệu lực toàn bộ", key="removeFullExpire")
+    with number_of_result_col:
+        number_of_result = st.selectbox("Giới hạn truy vấn",options=(10,20,50,100), label_visibility="hidden")
     with submitButton_col:
         st.text(' ')
         st.button("🍳", type="primary", on_click=queryAPI, args=(pre_process(search_bar_text),))
@@ -132,7 +130,7 @@ with main_container:
 
     N_cards_per_row = 1
     if search_bar_text != '':
-        queryAPI(search_bar_text)
+        queryAPI(query=search_bar_text, top_n=number_of_result)
         if st.session_state['result'] == []:
             main_container.subheader("Không tìm thấy kết quả 🥲")
         else:
