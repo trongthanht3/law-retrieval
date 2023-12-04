@@ -62,7 +62,7 @@ def queryAPI(query):
     url = "http://localhost:5000/api/v1/lawRetrievalRouter/lawRetrieval"
     payload = {
         "query": f"{query}",
-        "top_n": 30
+        "top_n": 100
     }
     response = requests.request("POST", url, json=payload)
     st.session_state['result'] = response.json()

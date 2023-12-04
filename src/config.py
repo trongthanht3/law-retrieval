@@ -27,3 +27,6 @@ CORPUS_PATH = config("CORPUS_PATH", default="src/database/law_corpus.csv")
 # ML model
 BM25_MODEL_PATH = config("BM25_MODEL_PATH", default="bm25_model")
 BM25_ONLY_TEXT_PATH = config("BM25_ONLY_TEXT_PATH", default="bm25_model")
+SBERT_MODEL_PATH = config("SBERT_MODEL_PATH", default="src/models/sbertv2")
+CORPUS_EMB = config("CORPUS_EMB", default="src/model/corpus_emb.sav")
+RANGE_SCORE = config("RANGE_SCORE", default=2.6)

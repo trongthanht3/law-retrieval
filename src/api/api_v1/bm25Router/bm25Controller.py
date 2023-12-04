@@ -18,7 +18,7 @@ load_time_start = time()
 bm25 = pickle.load(open(BM25_MODEL_PATH, 'rb'))
 # ,url,description,law_name,law_id,article_id,article_name,article_content,expDate,isExpire,is_zalo,combine,is_non_url
 df_corpus = pd.read_csv(CORPUS_PATH, dtype={"url": str, "description": str, "law_name": str, "law_id": str,
-                                            "article_id": int, "article_name": str, "article_content": str,
+                                            "article_id": np.int16, "article_name": str, "article_content": str,
                                             "expDate": str, "isExpire": str, "is_zalo": bool, "combine": str,
                                             "is_non_url": bool}, index_col=0)
 df_corpus_columns = df_corpus.columns
@@ -41,7 +41,7 @@ def pre_search(query):
     for description in pre_search_description:
         q = no_accent_vietnamese(str(query).lower())
         d = 'luat ' + no_accent_vietnamese(str(description).lower())
-        if q in d and len(d) <= 3*len(q):
+        if q in d and len(d.split(" ")) <= 3*len(q.split(" ")):
             return df_corpus[df_corpus['description'] == description]
 
 
@@ -51,10 +51,20 @@ def bm25_query(query, top_n=30):
     res = [x for x in docs if str(x) != 'nan']
     return res
 
+def bm25_query_with_score(query, top_n=30):
+    tokenized_query = word_tokenize(query)
+    docs = bm25.get_scores(tokenized_query)
+    return docs
+
 
 def get_result_info(docs):
     result = pd.DataFrame(columns=df_corpus_columns)
     for doc in docs:
         result = pd.concat([result, df_corpus[df_corpus['combine'] == doc][:1]], ignore_index=True)
+    result.drop(columns=['combine', 'is_zalo', 'is_non_url'], inplace=True)
+    return result
+
+def get_result_info_by_ids(ids):
+    result = df_corpus.iloc[ids]
     result.drop(columns=['combine', 'is_zalo', 'is_non_url'], inplace=True)
     return result
