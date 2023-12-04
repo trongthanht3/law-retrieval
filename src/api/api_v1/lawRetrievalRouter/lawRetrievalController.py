@@ -20,8 +20,12 @@ def law_retrieval(query, top_n):
     if pre_search is not None:
         pre_search['score'] = 1
         list_law_id = pre_search[['law_id', 'article_id']]
-        print(list_law_id)
-        return json.loads(pre_search.to_json(orient='records')), json.loads(pre_search.to_json(orient='records'))
+        user_query = Query(query=query, relevant_documents=str(json.loads(list_law_id.to_json(orient='records'))))
+        session.add(user_query)
+        session.commit()
+        session.flush()
+        session.refresh(user_query)
+        return user_query, json.loads(pre_search.to_json(orient='records'))
     # bm25res = bm25Controller.bm25_query(query, top_n)
     bm25scores = bm25Controller.bm25_query_with_score(query)
     cosim_scores = sbertController.compute_score([query])
