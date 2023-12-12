@@ -38,8 +38,6 @@ def law_retrieval(query, top_n):
                float(score) >= max_score - float(RANGE_SCORE) and float(score) <= max_score]
     combine_scores = [float(score) for score, idx in zip(final_scores, indices) if
                float(score) >= max_score - float(RANGE_SCORE) and float(score) <= max_score]
-    if combine_scores[0] < 0.01:
-        return [], []
     # print("bm25:", torch.topk(torch.tensor(bm25scores), top_n))
     # print("combine:", combine_scores)
     bm25res_full_info = bm25Controller.get_result_info_by_ids(map_ids)
@@ -61,6 +59,8 @@ def law_retrieval(query, top_n):
     session.commit()
     session.flush()
     session.refresh(user_query)
+    if combine_scores[0] < 0.01:
+        return user_query, []
 
     return user_query, json.loads(bm25res_full_info.to_json(orient='records'))
 

@@ -160,7 +160,7 @@ with main_container:
                     button_key_count = n_row
                     score_col, feedback_col_positive, feedback_col_negative = st.columns(spec=(6, 1, 1))
                     with score_col:
-                        st.markdown(f"*Độ tương quan: {row['score']}*")
+                        st.markdown(f"*Điểm tương quan: {row['score']}*")
                     with feedback_col_positive:
                         if st.button("👍", type="secondary", on_click=feedbackAPI, help="Văn bản này là chính xác",
                                      args=(
