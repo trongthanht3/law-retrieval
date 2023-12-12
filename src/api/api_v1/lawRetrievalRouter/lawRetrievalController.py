@@ -16,6 +16,7 @@ from config import (
 
 
 def law_retrieval(query, top_n):
+    query = query.lower()
     pre_search = bm25Controller.pre_search(query)
     if pre_search is not None:
         pre_search['score'] = 1
