@@ -1,0 +1,911 @@
+2023-11-16 17:27:09 - Use pytorch device: cuda
+2023-11-16 17:39:58 - Binary Accuracy Evaluation of the model on  dataset in epoch 0 after 2500 steps:
+2023-11-16 17:43:29 - Accuracy with Cosine-Similarity:           96.78	(Threshold: 0.7214)
+2023-11-16 17:43:29 - F1 with Cosine-Similarity:                 94.94	(Threshold: 0.7206)
+2023-11-16 17:43:29 - Precision with Cosine-Similarity:          97.56
+2023-11-16 17:43:29 - Recall with Cosine-Similarity:             92.45
+2023-11-16 17:43:29 - Average Precision with Cosine-Similarity:  98.37
+
+2023-11-16 17:43:29 - Accuracy with Manhattan-Distance:           96.75	(Threshold: 81.5537)
+2023-11-16 17:43:29 - F1 with Manhattan-Distance:                 94.88	(Threshold: 81.5537)
+2023-11-16 17:43:29 - Precision with Manhattan-Distance:          97.60
+2023-11-16 17:43:29 - Recall with Manhattan-Distance:             92.32
+2023-11-16 17:43:29 - Average Precision with Manhattan-Distance:  98.07
+
+2023-11-16 17:43:29 - Accuracy with Euclidean-Distance:           96.74	(Threshold: 3.1605)
+2023-11-16 17:43:29 - F1 with Euclidean-Distance:                 94.88	(Threshold: 3.2791)
+2023-11-16 17:43:29 - Precision with Euclidean-Distance:          97.33
+2023-11-16 17:43:29 - Recall with Euclidean-Distance:             92.56
+2023-11-16 17:43:29 - Average Precision with Euclidean-Distance:  98.08
+
+2023-11-16 17:43:29 - Accuracy with Dot-Product:           86.65	(Threshold: 10.6522)
+2023-11-16 17:43:29 - F1 with Dot-Product:                 80.45	(Threshold: 10.5459)
+2023-11-16 17:43:29 - Precision with Dot-Product:          75.83
+2023-11-16 17:43:29 - Recall with Dot-Product:             85.66
+2023-11-16 17:43:29 - Average Precision with Dot-Product:  74.74
+
+2023-11-16 17:43:29 - Save model to output/
+2023-11-16 17:55:35 - Binary Accuracy Evaluation of the model on  dataset in epoch 0 after 5000 steps:
+2023-11-16 17:58:59 - Accuracy with Cosine-Similarity:           96.86	(Threshold: 0.6505)
+2023-11-16 17:58:59 - F1 with Cosine-Similarity:                 95.08	(Threshold: 0.6505)
+2023-11-16 17:58:59 - Precision with Cosine-Similarity:          97.44
+2023-11-16 17:58:59 - Recall with Cosine-Similarity:             92.84
+2023-11-16 17:58:59 - Average Precision with Cosine-Similarity:  98.43
+
+2023-11-16 17:58:59 - Accuracy with Manhattan-Distance:           96.83	(Threshold: 85.8015)
+2023-11-16 17:58:59 - F1 with Manhattan-Distance:                 94.99	(Threshold: 85.8015)
+2023-11-16 17:58:59 - Precision with Manhattan-Distance:          98.14
+2023-11-16 17:58:59 - Recall with Manhattan-Distance:             92.04
+2023-11-16 17:58:59 - Average Precision with Manhattan-Distance:  97.96
+
+2023-11-16 17:58:59 - Accuracy with Euclidean-Distance:           96.82	(Threshold: 3.3695)
+2023-11-16 17:58:59 - F1 with Euclidean-Distance:                 94.98	(Threshold: 3.4240)
+2023-11-16 17:58:59 - Precision with Euclidean-Distance:          97.99
+2023-11-16 17:58:59 - Recall with Euclidean-Distance:             92.16
+2023-11-16 17:58:59 - Average Precision with Euclidean-Distance:  97.96
+
+2023-11-16 17:58:59 - Accuracy with Dot-Product:           67.83	(Threshold: 13.3402)
+2023-11-16 17:58:59 - F1 with Dot-Product:                 57.51	(Threshold: 9.3620)
+2023-11-16 17:58:59 - Precision with Dot-Product:          42.21
+2023-11-16 17:58:59 - Recall with Dot-Product:             90.22
+2023-11-16 17:58:59 - Average Precision with Dot-Product:  39.39
+
+2023-11-16 17:58:59 - Save model to output/
+2023-11-16 18:11:02 - Binary Accuracy Evaluation of the model on  dataset in epoch 0 after 7500 steps:
+2023-11-16 18:14:27 - Accuracy with Cosine-Similarity:           97.13	(Threshold: 0.7190)
+2023-11-16 18:14:27 - F1 with Cosine-Similarity:                 95.50	(Threshold: 0.7190)
+2023-11-16 18:14:27 - Precision with Cosine-Similarity:          97.75
+2023-11-16 18:14:27 - Recall with Cosine-Similarity:             93.35
+2023-11-16 18:14:27 - Average Precision with Cosine-Similarity:  98.67
+
+2023-11-16 18:14:27 - Accuracy with Manhattan-Distance:           97.07	(Threshold: 79.0836)
+2023-11-16 18:14:27 - F1 with Manhattan-Distance:                 95.39	(Threshold: 79.0836)
+2023-11-16 18:14:27 - Precision with Manhattan-Distance:          98.15
+2023-11-16 18:14:27 - Recall with Manhattan-Distance:             92.78
+2023-11-16 18:14:27 - Average Precision with Manhattan-Distance:  98.15
+
+2023-11-16 18:14:27 - Accuracy with Euclidean-Distance:           97.08	(Threshold: 3.0910)
+2023-11-16 18:14:27 - F1 with Euclidean-Distance:                 95.40	(Threshold: 3.0982)
+2023-11-16 18:14:27 - Precision with Euclidean-Distance:          98.16
+2023-11-16 18:14:27 - Recall with Euclidean-Distance:             92.79
+2023-11-16 18:14:27 - Average Precision with Euclidean-Distance:  98.14
+
+2023-11-16 18:14:27 - Accuracy with Dot-Product:           67.85	(Threshold: 15.2523)
+2023-11-16 18:14:27 - F1 with Dot-Product:                 57.72	(Threshold: 9.2781)
+2023-11-16 18:14:27 - Precision with Dot-Product:          41.38
+2023-11-16 18:14:27 - Recall with Dot-Product:             95.37
+2023-11-16 18:14:27 - Average Precision with Dot-Product:  33.42
+
+2023-11-16 18:14:27 - Save model to output/
+2023-11-16 18:18:16 - Binary Accuracy Evaluation of the model on  dataset after epoch 0:
+2023-11-16 18:21:39 - Accuracy with Cosine-Similarity:           97.26	(Threshold: 0.7346)
+2023-11-16 18:21:39 - F1 with Cosine-Similarity:                 95.72	(Threshold: 0.6946)
+2023-11-16 18:21:39 - Precision with Cosine-Similarity:          97.62
+2023-11-16 18:21:39 - Recall with Cosine-Similarity:             93.90
+2023-11-16 18:21:39 - Average Precision with Cosine-Similarity:  98.74
+
+2023-11-16 18:21:40 - Accuracy with Manhattan-Distance:           97.23	(Threshold: 83.4247)
+2023-11-16 18:21:40 - F1 with Manhattan-Distance:                 95.63	(Threshold: 83.5034)
+2023-11-16 18:21:40 - Precision with Manhattan-Distance:          98.52
+2023-11-16 18:21:40 - Recall with Manhattan-Distance:             92.90
+2023-11-16 18:21:40 - Average Precision with Manhattan-Distance:  98.31
+
+2023-11-16 18:21:40 - Accuracy with Euclidean-Distance:           97.23	(Threshold: 3.2688)
+2023-11-16 18:21:40 - F1 with Euclidean-Distance:                 95.63	(Threshold: 3.2688)
+2023-11-16 18:21:40 - Precision with Euclidean-Distance:          98.58
+2023-11-16 18:21:40 - Recall with Euclidean-Distance:             92.85
+2023-11-16 18:21:40 - Average Precision with Euclidean-Distance:  98.30
+
+2023-11-16 18:21:40 - Accuracy with Dot-Product:           81.00	(Threshold: 10.2142)
+2023-11-16 18:21:40 - F1 with Dot-Product:                 75.00	(Threshold: 10.1008)
+2023-11-16 18:21:40 - Precision with Dot-Product:          64.03
+2023-11-16 18:21:40 - Recall with Dot-Product:             90.51
+2023-11-16 18:21:40 - Average Precision with Dot-Product:  64.21
+
+2023-11-16 18:21:40 - Save model to output/
+2023-11-16 18:33:48 - Binary Accuracy Evaluation of the model on  dataset in epoch 1 after 2500 steps:
+2023-11-16 18:37:11 - Accuracy with Cosine-Similarity:           97.03	(Threshold: 0.6684)
+2023-11-16 18:37:11 - F1 with Cosine-Similarity:                 95.33	(Threshold: 0.6684)
+2023-11-16 18:37:11 - Precision with Cosine-Similarity:          97.88
+2023-11-16 18:37:11 - Recall with Cosine-Similarity:             92.92
+2023-11-16 18:37:11 - Average Precision with Cosine-Similarity:  98.66
+
+2023-11-16 18:37:11 - Accuracy with Manhattan-Distance:           97.11	(Threshold: 98.7608)
+2023-11-16 18:37:11 - F1 with Manhattan-Distance:                 95.48	(Threshold: 98.8664)
+2023-11-16 18:37:11 - Precision with Manhattan-Distance:          97.72
+2023-11-16 18:37:11 - Recall with Manhattan-Distance:             93.34
+2023-11-16 18:37:11 - Average Precision with Manhattan-Distance:  98.48
+
+2023-11-16 18:37:11 - Accuracy with Euclidean-Distance:           97.10	(Threshold: 3.8790)
+2023-11-16 18:37:11 - F1 with Euclidean-Distance:                 95.46	(Threshold: 3.8808)
+2023-11-16 18:37:11 - Precision with Euclidean-Distance:          97.72
+2023-11-16 18:37:11 - Recall with Euclidean-Distance:             93.30
+2023-11-16 18:37:11 - Average Precision with Euclidean-Distance:  98.49
+
+2023-11-16 18:37:11 - Accuracy with Dot-Product:           82.07	(Threshold: 11.3946)
+2023-11-16 18:37:11 - F1 with Dot-Product:                 74.99	(Threshold: 11.2228)
+2023-11-16 18:37:11 - Precision with Dot-Product:          67.38
+2023-11-16 18:37:11 - Recall with Dot-Product:             84.54
+2023-11-16 18:37:11 - Average Precision with Dot-Product:  68.04
+
+2023-11-16 18:49:16 - Binary Accuracy Evaluation of the model on  dataset in epoch 1 after 5000 steps:
+2023-11-16 18:52:40 - Accuracy with Cosine-Similarity:           97.29	(Threshold: 0.7308)
+2023-11-16 18:52:40 - F1 with Cosine-Similarity:                 95.75	(Threshold: 0.7308)
+2023-11-16 18:52:40 - Precision with Cosine-Similarity:          98.16
+2023-11-16 18:52:40 - Recall with Cosine-Similarity:             93.46
+2023-11-16 18:52:40 - Average Precision with Cosine-Similarity:  98.76
+
+2023-11-16 18:52:40 - Accuracy with Manhattan-Distance:           97.16	(Threshold: 80.5096)
+2023-11-16 18:52:40 - F1 with Manhattan-Distance:                 95.52	(Threshold: 90.1760)
+2023-11-16 18:52:40 - Precision with Manhattan-Distance:          97.87
+2023-11-16 18:52:40 - Recall with Manhattan-Distance:             93.29
+2023-11-16 18:52:40 - Average Precision with Manhattan-Distance:  98.33
+
+2023-11-16 18:52:40 - Accuracy with Euclidean-Distance:           97.16	(Threshold: 3.1628)
+2023-11-16 18:52:40 - F1 with Euclidean-Distance:                 95.53	(Threshold: 3.4836)
+2023-11-16 18:52:40 - Precision with Euclidean-Distance:          98.07
+2023-11-16 18:52:40 - Recall with Euclidean-Distance:             93.11
+2023-11-16 18:52:40 - Average Precision with Euclidean-Distance:  98.31
+
+2023-11-16 18:52:40 - Accuracy with Dot-Product:           86.84	(Threshold: 11.2139)
+2023-11-16 18:52:40 - F1 with Dot-Product:                 81.21	(Threshold: 11.0253)
+2023-11-16 18:52:40 - Precision with Dot-Product:          74.70
+2023-11-16 18:52:40 - Recall with Dot-Product:             88.96
+2023-11-16 18:52:40 - Average Precision with Dot-Product:  73.93
+
+2023-11-16 18:52:40 - Save model to output/
+2023-11-16 19:04:45 - Binary Accuracy Evaluation of the model on  dataset in epoch 1 after 7500 steps:
+2023-11-16 19:08:09 - Accuracy with Cosine-Similarity:           97.38	(Threshold: 0.6887)
+2023-11-16 19:08:09 - F1 with Cosine-Similarity:                 95.90	(Threshold: 0.6887)
+2023-11-16 19:08:09 - Precision with Cosine-Similarity:          97.99
+2023-11-16 19:08:09 - Recall with Cosine-Similarity:             93.89
+2023-11-16 19:08:09 - Average Precision with Cosine-Similarity:  98.89
+
+2023-11-16 19:08:09 - Accuracy with Manhattan-Distance:           97.29	(Threshold: 93.9317)
+2023-11-16 19:08:09 - F1 with Manhattan-Distance:                 95.76	(Threshold: 95.9881)
+2023-11-16 19:08:09 - Precision with Manhattan-Distance:          97.97
+2023-11-16 19:08:09 - Recall with Manhattan-Distance:             93.64
+2023-11-16 19:08:09 - Average Precision with Manhattan-Distance:  98.32
+
+2023-11-16 19:08:09 - Accuracy with Euclidean-Distance:           97.28	(Threshold: 3.7163)
+2023-11-16 19:08:09 - F1 with Euclidean-Distance:                 95.74	(Threshold: 3.8088)
+2023-11-16 19:08:09 - Precision with Euclidean-Distance:          97.79
+2023-11-16 19:08:09 - Recall with Euclidean-Distance:             93.77
+2023-11-16 19:08:09 - Average Precision with Euclidean-Distance:  98.30
+
+2023-11-16 19:08:09 - Accuracy with Dot-Product:           86.24	(Threshold: 11.5698)
+2023-11-16 19:08:09 - F1 with Dot-Product:                 79.98	(Threshold: 11.4895)
+2023-11-16 19:08:09 - Precision with Dot-Product:          75.08
+2023-11-16 19:08:09 - Recall with Dot-Product:             85.57
+2023-11-16 19:08:09 - Average Precision with Dot-Product:  75.68
+
+2023-11-16 19:08:09 - Save model to output/
+2023-11-16 19:11:58 - Binary Accuracy Evaluation of the model on  dataset after epoch 1:
+2023-11-16 19:15:21 - Accuracy with Cosine-Similarity:           97.31	(Threshold: 0.7319)
+2023-11-16 19:15:21 - F1 with Cosine-Similarity:                 95.80	(Threshold: 0.7315)
+2023-11-16 19:15:21 - Precision with Cosine-Similarity:          97.74
+2023-11-16 19:15:21 - Recall with Cosine-Similarity:             93.93
+2023-11-16 19:15:21 - Average Precision with Cosine-Similarity:  98.86
+
+2023-11-16 19:15:22 - Accuracy with Manhattan-Distance:           97.30	(Threshold: 88.1096)
+2023-11-16 19:15:22 - F1 with Manhattan-Distance:                 95.78	(Threshold: 88.2176)
+2023-11-16 19:15:22 - Precision with Manhattan-Distance:          97.95
+2023-11-16 19:15:22 - Recall with Manhattan-Distance:             93.70
+2023-11-16 19:15:22 - Average Precision with Manhattan-Distance:  98.43
+
+2023-11-16 19:15:22 - Accuracy with Euclidean-Distance:           97.29	(Threshold: 3.4488)
+2023-11-16 19:15:22 - F1 with Euclidean-Distance:                 95.76	(Threshold: 3.5204)
+2023-11-16 19:15:22 - Precision with Euclidean-Distance:          97.77
+2023-11-16 19:15:22 - Recall with Euclidean-Distance:             93.83
+2023-11-16 19:15:22 - Average Precision with Euclidean-Distance:  98.42
+
+2023-11-16 19:15:22 - Accuracy with Dot-Product:           86.64	(Threshold: 12.1614)
+2023-11-16 19:15:22 - F1 with Dot-Product:                 80.50	(Threshold: 12.0261)
+2023-11-16 19:15:22 - Precision with Dot-Product:          75.56
+2023-11-16 19:15:22 - Recall with Dot-Product:             86.12
+2023-11-16 19:15:22 - Average Precision with Dot-Product:  74.73
+
+2023-11-16 19:27:22 - Binary Accuracy Evaluation of the model on  dataset in epoch 2 after 2500 steps:
+2023-11-16 19:30:46 - Accuracy with Cosine-Similarity:           97.46	(Threshold: 0.7239)
+2023-11-16 19:30:46 - F1 with Cosine-Similarity:                 96.01	(Threshold: 0.7239)
+2023-11-16 19:30:46 - Precision with Cosine-Similarity:          98.28
+2023-11-16 19:30:46 - Recall with Cosine-Similarity:             93.85
+2023-11-16 19:30:46 - Average Precision with Cosine-Similarity:  98.96
+
+2023-11-16 19:30:46 - Accuracy with Manhattan-Distance:           97.32	(Threshold: 92.9740)
+2023-11-16 19:30:46 - F1 with Manhattan-Distance:                 95.80	(Threshold: 97.7319)
+2023-11-16 19:30:46 - Precision with Manhattan-Distance:          97.86
+2023-11-16 19:30:46 - Recall with Manhattan-Distance:             93.83
+2023-11-16 19:30:46 - Average Precision with Manhattan-Distance:  98.60
+
+2023-11-16 19:30:46 - Accuracy with Euclidean-Distance:           97.32	(Threshold: 3.5627)
+2023-11-16 19:30:46 - F1 with Euclidean-Distance:                 95.79	(Threshold: 3.8571)
+2023-11-16 19:30:46 - Precision with Euclidean-Distance:          97.76
+2023-11-16 19:30:46 - Recall with Euclidean-Distance:             93.90
+2023-11-16 19:30:46 - Average Precision with Euclidean-Distance:  98.60
+
+2023-11-16 19:30:46 - Accuracy with Dot-Product:           68.01	(Threshold: 18.5316)
+2023-11-16 19:30:46 - F1 with Dot-Product:                 64.21	(Threshold: 10.8470)
+2023-11-16 19:30:46 - Precision with Dot-Product:          48.67
+2023-11-16 19:30:46 - Recall with Dot-Product:             94.32
+2023-11-16 19:30:46 - Average Precision with Dot-Product:  45.31
+
+2023-11-16 19:30:46 - Save model to output/
+2023-11-16 19:42:50 - Binary Accuracy Evaluation of the model on  dataset in epoch 2 after 5000 steps:
+2023-11-16 19:46:14 - Accuracy with Cosine-Similarity:           97.44	(Threshold: 0.7639)
+2023-11-16 19:46:14 - F1 with Cosine-Similarity:                 95.99	(Threshold: 0.7366)
+2023-11-16 19:46:14 - Precision with Cosine-Similarity:          97.95
+2023-11-16 19:46:14 - Recall with Cosine-Similarity:             94.10
+2023-11-16 19:46:14 - Average Precision with Cosine-Similarity:  98.92
+
+2023-11-16 19:46:14 - Accuracy with Manhattan-Distance:           97.36	(Threshold: 96.0461)
+2023-11-16 19:46:14 - F1 with Manhattan-Distance:                 95.88	(Threshold: 96.0461)
+2023-11-16 19:46:14 - Precision with Manhattan-Distance:          97.82
+2023-11-16 19:46:14 - Recall with Manhattan-Distance:             94.02
+2023-11-16 19:46:14 - Average Precision with Manhattan-Distance:  98.64
+
+2023-11-16 19:46:14 - Accuracy with Euclidean-Distance:           97.35	(Threshold: 3.7706)
+2023-11-16 19:46:14 - F1 with Euclidean-Distance:                 95.87	(Threshold: 3.7706)
+2023-11-16 19:46:14 - Precision with Euclidean-Distance:          97.78
+2023-11-16 19:46:14 - Recall with Euclidean-Distance:             94.03
+2023-11-16 19:46:14 - Average Precision with Euclidean-Distance:  98.63
+
+2023-11-16 19:46:14 - Accuracy with Dot-Product:           88.10	(Threshold: 12.6502)
+2023-11-16 19:46:14 - F1 with Dot-Product:                 82.92	(Threshold: 12.6502)
+2023-11-16 19:46:14 - Precision with Dot-Product:          78.02
+2023-11-16 19:46:14 - Recall with Dot-Product:             88.48
+2023-11-16 19:46:14 - Average Precision with Dot-Product:  75.85
+
+2023-11-16 19:58:17 - Binary Accuracy Evaluation of the model on  dataset in epoch 2 after 7500 steps:
+2023-11-16 20:01:40 - Accuracy with Cosine-Similarity:           97.49	(Threshold: 0.7379)
+2023-11-16 20:01:40 - F1 with Cosine-Similarity:                 96.08	(Threshold: 0.7177)
+2023-11-16 20:01:40 - Precision with Cosine-Similarity:          97.94
+2023-11-16 20:01:40 - Recall with Cosine-Similarity:             94.29
+2023-11-16 20:01:40 - Average Precision with Cosine-Similarity:  98.94
+
+2023-11-16 20:01:40 - Accuracy with Manhattan-Distance:           97.38	(Threshold: 94.3270)
+2023-11-16 20:01:40 - F1 with Manhattan-Distance:                 95.89	(Threshold: 95.0666)
+2023-11-16 20:01:40 - Precision with Manhattan-Distance:          98.30
+2023-11-16 20:01:40 - Recall with Manhattan-Distance:             93.60
+2023-11-16 20:01:40 - Average Precision with Manhattan-Distance:  98.60
+
+2023-11-16 20:01:41 - Accuracy with Euclidean-Distance:           97.38	(Threshold: 3.7281)
+2023-11-16 20:01:41 - F1 with Euclidean-Distance:                 95.89	(Threshold: 3.7673)
+2023-11-16 20:01:41 - Precision with Euclidean-Distance:          98.16
+2023-11-16 20:01:41 - Recall with Euclidean-Distance:             93.71
+2023-11-16 20:01:41 - Average Precision with Euclidean-Distance:  98.59
+
+2023-11-16 20:01:41 - Accuracy with Dot-Product:           88.25	(Threshold: 12.5674)
+2023-11-16 20:01:41 - F1 with Dot-Product:                 83.23	(Threshold: 12.5177)
+2023-11-16 20:01:41 - Precision with Dot-Product:          77.51
+2023-11-16 20:01:41 - Recall with Dot-Product:             89.87
+2023-11-16 20:01:41 - Average Precision with Dot-Product:  76.75
+
+2023-11-16 20:05:27 - Binary Accuracy Evaluation of the model on  dataset after epoch 2:
+2023-11-16 20:08:50 - Accuracy with Cosine-Similarity:           97.41	(Threshold: 0.7227)
+2023-11-16 20:08:50 - F1 with Cosine-Similarity:                 95.97	(Threshold: 0.7190)
+2023-11-16 20:08:50 - Precision with Cosine-Similarity:          97.68
+2023-11-16 20:08:50 - Recall with Cosine-Similarity:             94.32
+2023-11-16 20:08:50 - Average Precision with Cosine-Similarity:  98.92
+
+2023-11-16 20:08:50 - Accuracy with Manhattan-Distance:           97.36	(Threshold: 95.8109)
+2023-11-16 20:08:50 - F1 with Manhattan-Distance:                 95.87	(Threshold: 95.8109)
+2023-11-16 20:08:50 - Precision with Manhattan-Distance:          98.11
+2023-11-16 20:08:50 - Recall with Manhattan-Distance:             93.73
+2023-11-16 20:08:50 - Average Precision with Manhattan-Distance:  98.64
+
+2023-11-16 20:08:51 - Accuracy with Euclidean-Distance:           97.36	(Threshold: 3.8146)
+2023-11-16 20:08:51 - F1 with Euclidean-Distance:                 95.88	(Threshold: 3.8940)
+2023-11-16 20:08:51 - Precision with Euclidean-Distance:          97.67
+2023-11-16 20:08:51 - Recall with Euclidean-Distance:             94.16
+2023-11-16 20:08:51 - Average Precision with Euclidean-Distance:  98.63
+
+2023-11-16 20:08:51 - Accuracy with Dot-Product:           83.40	(Threshold: 13.2246)
+2023-11-16 20:08:51 - F1 with Dot-Product:                 76.77	(Threshold: 13.1465)
+2023-11-16 20:08:51 - Precision with Dot-Product:          70.09
+2023-11-16 20:08:51 - Recall with Dot-Product:             84.86
+2023-11-16 20:08:51 - Average Precision with Dot-Product:  69.74
+
+2023-11-16 20:20:53 - Binary Accuracy Evaluation of the model on  dataset in epoch 3 after 2500 steps:
+2023-11-16 20:24:24 - Accuracy with Cosine-Similarity:           97.44	(Threshold: 0.7187)
+2023-11-16 20:24:24 - F1 with Cosine-Similarity:                 96.02	(Threshold: 0.7187)
+2023-11-16 20:24:24 - Precision with Cosine-Similarity:          97.57
+2023-11-16 20:24:24 - Recall with Cosine-Similarity:             94.53
+2023-11-16 20:24:24 - Average Precision with Cosine-Similarity:  98.93
+
+2023-11-16 20:24:24 - Accuracy with Manhattan-Distance:           97.28	(Threshold: 96.9787)
+2023-11-16 20:24:24 - F1 with Manhattan-Distance:                 95.75	(Threshold: 96.9787)
+2023-11-16 20:24:24 - Precision with Manhattan-Distance:          97.92
+2023-11-16 20:24:24 - Recall with Manhattan-Distance:             93.67
+2023-11-16 20:24:24 - Average Precision with Manhattan-Distance:  98.58
+
+2023-11-16 20:24:24 - Accuracy with Euclidean-Distance:           97.29	(Threshold: 3.8219)
+2023-11-16 20:24:24 - F1 with Euclidean-Distance:                 95.76	(Threshold: 3.8250)
+2023-11-16 20:24:24 - Precision with Euclidean-Distance:          97.90
+2023-11-16 20:24:24 - Recall with Euclidean-Distance:             93.72
+2023-11-16 20:24:24 - Average Precision with Euclidean-Distance:  98.57
+
+2023-11-16 20:24:24 - Accuracy with Dot-Product:           89.35	(Threshold: 13.7194)
+2023-11-16 20:24:24 - F1 with Dot-Product:                 84.32	(Threshold: 13.5992)
+2023-11-16 20:24:24 - Precision with Dot-Product:          80.76
+2023-11-16 20:24:24 - Recall with Dot-Product:             88.21
+2023-11-16 20:24:24 - Average Precision with Dot-Product:  79.27
+
+2023-11-16 20:36:43 - Binary Accuracy Evaluation of the model on  dataset in epoch 3 after 5000 steps:
+2023-11-16 20:40:11 - Accuracy with Cosine-Similarity:           97.56	(Threshold: 0.7213)
+2023-11-16 20:40:11 - F1 with Cosine-Similarity:                 96.19	(Threshold: 0.7191)
+2023-11-16 20:40:11 - Precision with Cosine-Similarity:          98.30
+2023-11-16 20:40:11 - Recall with Cosine-Similarity:             94.17
+2023-11-16 20:40:11 - Average Precision with Cosine-Similarity:  98.98
+
+2023-11-16 20:40:11 - Accuracy with Manhattan-Distance:           97.44	(Threshold: 93.7959)
+2023-11-16 20:40:11 - F1 with Manhattan-Distance:                 95.97	(Threshold: 99.0296)
+2023-11-16 20:40:11 - Precision with Manhattan-Distance:          98.12
+2023-11-16 20:40:11 - Recall with Manhattan-Distance:             93.92
+2023-11-16 20:40:11 - Average Precision with Manhattan-Distance:  98.62
+
+2023-11-16 20:40:11 - Accuracy with Euclidean-Distance:           97.44	(Threshold: 3.7465)
+2023-11-16 20:40:11 - F1 with Euclidean-Distance:                 95.99	(Threshold: 3.8244)
+2023-11-16 20:40:11 - Precision with Euclidean-Distance:          98.35
+2023-11-16 20:40:11 - Recall with Euclidean-Distance:             93.73
+2023-11-16 20:40:11 - Average Precision with Euclidean-Distance:  98.61
+
+2023-11-16 20:40:11 - Accuracy with Dot-Product:           90.90	(Threshold: 13.0781)
+2023-11-16 20:40:11 - F1 with Dot-Product:                 86.49	(Threshold: 13.0402)
+2023-11-16 20:40:11 - Precision with Dot-Product:          83.48
+2023-11-16 20:40:11 - Recall with Dot-Product:             89.71
+2023-11-16 20:40:11 - Average Precision with Dot-Product:  81.17
+
+2023-11-16 20:40:11 - Save model to output/
+2023-11-16 20:52:39 - Binary Accuracy Evaluation of the model on  dataset in epoch 3 after 7500 steps:
+2023-11-16 20:56:08 - Accuracy with Cosine-Similarity:           97.55	(Threshold: 0.7879)
+2023-11-16 20:56:08 - F1 with Cosine-Similarity:                 96.18	(Threshold: 0.7563)
+2023-11-16 20:56:08 - Precision with Cosine-Similarity:          97.94
+2023-11-16 20:56:08 - Recall with Cosine-Similarity:             94.48
+2023-11-16 20:56:08 - Average Precision with Cosine-Similarity:  99.04
+
+2023-11-16 20:56:08 - Accuracy with Manhattan-Distance:           97.49	(Threshold: 92.5872)
+2023-11-16 20:56:08 - F1 with Manhattan-Distance:                 96.07	(Threshold: 92.5872)
+2023-11-16 20:56:08 - Precision with Manhattan-Distance:          98.43
+2023-11-16 20:56:08 - Recall with Manhattan-Distance:             93.82
+2023-11-16 20:56:08 - Average Precision with Manhattan-Distance:  98.77
+
+2023-11-16 20:56:08 - Accuracy with Euclidean-Distance:           97.49	(Threshold: 3.5963)
+2023-11-16 20:56:08 - F1 with Euclidean-Distance:                 96.06	(Threshold: 3.6089)
+2023-11-16 20:56:08 - Precision with Euclidean-Distance:          98.47
+2023-11-16 20:56:08 - Recall with Euclidean-Distance:             93.77
+2023-11-16 20:56:08 - Average Precision with Euclidean-Distance:  98.76
+
+2023-11-16 20:56:08 - Accuracy with Dot-Product:           92.10	(Threshold: 14.5382)
+2023-11-16 20:56:08 - F1 with Dot-Product:                 88.34	(Threshold: 14.4665)
+2023-11-16 20:56:08 - Precision with Dot-Product:          84.95
+2023-11-16 20:56:08 - Recall with Dot-Product:             92.01
+2023-11-16 20:56:08 - Average Precision with Dot-Product:  81.16
+
+2023-11-16 20:56:08 - Save model to output/
+2023-11-16 21:00:01 - Binary Accuracy Evaluation of the model on  dataset after epoch 3:
+2023-11-16 21:03:27 - Accuracy with Cosine-Similarity:           97.59	(Threshold: 0.7235)
+2023-11-16 21:03:27 - F1 with Cosine-Similarity:                 96.23	(Threshold: 0.7231)
+2023-11-16 21:03:27 - Precision with Cosine-Similarity:          98.06
+2023-11-16 21:03:27 - Recall with Cosine-Similarity:             94.47
+2023-11-16 21:03:27 - Average Precision with Cosine-Similarity:  99.05
+
+2023-11-16 21:03:27 - Accuracy with Manhattan-Distance:           97.38	(Threshold: 98.8716)
+2023-11-16 21:03:27 - F1 with Manhattan-Distance:                 95.91	(Threshold: 102.2518)
+2023-11-16 21:03:27 - Precision with Manhattan-Distance:          97.80
+2023-11-16 21:03:27 - Recall with Manhattan-Distance:             94.09
+2023-11-16 21:03:27 - Average Precision with Manhattan-Distance:  98.58
+
+2023-11-16 21:03:27 - Accuracy with Euclidean-Distance:           97.39	(Threshold: 3.8970)
+2023-11-16 21:03:27 - F1 with Euclidean-Distance:                 95.92	(Threshold: 3.8970)
+2023-11-16 21:03:27 - Precision with Euclidean-Distance:          98.16
+2023-11-16 21:03:27 - Recall with Euclidean-Distance:             93.77
+2023-11-16 21:03:27 - Average Precision with Euclidean-Distance:  98.57
+
+2023-11-16 21:03:27 - Accuracy with Dot-Product:           93.64	(Threshold: 14.3295)
+2023-11-16 21:03:27 - F1 with Dot-Product:                 90.47	(Threshold: 14.1936)
+2023-11-16 21:03:27 - Precision with Dot-Product:          88.58
+2023-11-16 21:03:27 - Recall with Dot-Product:             92.46
+2023-11-16 21:03:27 - Average Precision with Dot-Product:  84.55
+
+2023-11-16 21:03:27 - Save model to output/
+2023-11-16 21:15:58 - Binary Accuracy Evaluation of the model on  dataset in epoch 4 after 2500 steps:
+2023-11-16 21:19:28 - Accuracy with Cosine-Similarity:           97.58	(Threshold: 0.7473)
+2023-11-16 21:19:28 - F1 with Cosine-Similarity:                 96.23	(Threshold: 0.7463)
+2023-11-16 21:19:28 - Precision with Cosine-Similarity:          97.91
+2023-11-16 21:19:28 - Recall with Cosine-Similarity:             94.60
+2023-11-16 21:19:28 - Average Precision with Cosine-Similarity:  99.04
+
+2023-11-16 21:19:28 - Accuracy with Manhattan-Distance:           97.39	(Threshold: 96.6519)
+2023-11-16 21:19:28 - F1 with Manhattan-Distance:                 95.90	(Threshold: 96.6519)
+2023-11-16 21:19:28 - Precision with Manhattan-Distance:          98.44
+2023-11-16 21:19:28 - Recall with Manhattan-Distance:             93.48
+2023-11-16 21:19:28 - Average Precision with Manhattan-Distance:  98.60
+
+2023-11-16 21:19:28 - Accuracy with Euclidean-Distance:           97.38	(Threshold: 3.8175)
+2023-11-16 21:19:28 - F1 with Euclidean-Distance:                 95.89	(Threshold: 3.8175)
+2023-11-16 21:19:28 - Precision with Euclidean-Distance:          98.39
+2023-11-16 21:19:28 - Recall with Euclidean-Distance:             93.52
+2023-11-16 21:19:28 - Average Precision with Euclidean-Distance:  98.59
+
+2023-11-16 21:19:28 - Accuracy with Dot-Product:           92.20	(Threshold: 15.3548)
+2023-11-16 21:19:28 - F1 with Dot-Product:                 88.54	(Threshold: 15.1625)
+2023-11-16 21:19:28 - Precision with Dot-Product:          84.67
+2023-11-16 21:19:28 - Recall with Dot-Product:             92.79
+2023-11-16 21:19:28 - Average Precision with Dot-Product:  81.30
+
+2023-11-16 21:31:44 - Binary Accuracy Evaluation of the model on  dataset in epoch 4 after 5000 steps:
+2023-11-16 21:35:13 - Accuracy with Cosine-Similarity:           97.58	(Threshold: 0.7684)
+2023-11-16 21:35:13 - F1 with Cosine-Similarity:                 96.22	(Threshold: 0.7684)
+2023-11-16 21:35:13 - Precision with Cosine-Similarity:          98.25
+2023-11-16 21:35:13 - Recall with Cosine-Similarity:             94.27
+2023-11-16 21:35:13 - Average Precision with Cosine-Similarity:  98.98
+
+2023-11-16 21:35:13 - Accuracy with Manhattan-Distance:           97.47	(Threshold: 102.9180)
+2023-11-16 21:35:13 - F1 with Manhattan-Distance:                 96.05	(Threshold: 103.3733)
+2023-11-16 21:35:13 - Precision with Manhattan-Distance:          97.93
+2023-11-16 21:35:13 - Recall with Manhattan-Distance:             94.24
+2023-11-16 21:35:13 - Average Precision with Manhattan-Distance:  98.67
+
+2023-11-16 21:35:13 - Accuracy with Euclidean-Distance:           97.47	(Threshold: 4.0247)
+2023-11-16 21:35:13 - F1 with Euclidean-Distance:                 96.05	(Threshold: 4.0290)
+2023-11-16 21:35:13 - Precision with Euclidean-Distance:          98.05
+2023-11-16 21:35:13 - Recall with Euclidean-Distance:             94.13
+2023-11-16 21:35:13 - Average Precision with Euclidean-Distance:  98.66
+
+2023-11-16 21:35:14 - Accuracy with Dot-Product:           91.53	(Threshold: 15.9375)
+2023-11-16 21:35:14 - F1 with Dot-Product:                 87.39	(Threshold: 15.8638)
+2023-11-16 21:35:14 - Precision with Dot-Product:          84.79
+2023-11-16 21:35:14 - Recall with Dot-Product:             90.16
+2023-11-16 21:35:14 - Average Precision with Dot-Product:  81.23
+
+2023-11-16 21:47:36 - Binary Accuracy Evaluation of the model on  dataset in epoch 4 after 7500 steps:
+2023-11-16 21:51:05 - Accuracy with Cosine-Similarity:           97.65	(Threshold: 0.7783)
+2023-11-16 21:51:05 - F1 with Cosine-Similarity:                 96.33	(Threshold: 0.7513)
+2023-11-16 21:51:05 - Precision with Cosine-Similarity:          98.08
+2023-11-16 21:51:05 - Recall with Cosine-Similarity:             94.63
+2023-11-16 21:51:05 - Average Precision with Cosine-Similarity:  99.02
+
+2023-11-16 21:51:05 - Accuracy with Manhattan-Distance:           97.55	(Threshold: 100.9880)
+2023-11-16 21:51:05 - F1 with Manhattan-Distance:                 96.15	(Threshold: 100.9880)
+2023-11-16 21:51:05 - Precision with Manhattan-Distance:          98.53
+2023-11-16 21:51:05 - Recall with Manhattan-Distance:             93.89
+2023-11-16 21:51:05 - Average Precision with Manhattan-Distance:  98.72
+
+2023-11-16 21:51:05 - Accuracy with Euclidean-Distance:           97.54	(Threshold: 3.9884)
+2023-11-16 21:51:05 - F1 with Euclidean-Distance:                 96.14	(Threshold: 4.0011)
+2023-11-16 21:51:05 - Precision with Euclidean-Distance:          98.46
+2023-11-16 21:51:05 - Recall with Euclidean-Distance:             93.94
+2023-11-16 21:51:05 - Average Precision with Euclidean-Distance:  98.71
+
+2023-11-16 21:51:05 - Accuracy with Dot-Product:           89.95	(Threshold: 17.2640)
+2023-11-16 21:51:05 - F1 with Dot-Product:                 84.91	(Threshold: 17.0199)
+2023-11-16 21:51:05 - Precision with Dot-Product:          81.87
+2023-11-16 21:51:05 - Recall with Dot-Product:             88.19
+2023-11-16 21:51:05 - Average Precision with Dot-Product:  80.26
+
+2023-11-16 21:54:56 - Binary Accuracy Evaluation of the model on  dataset after epoch 4:
+2023-11-16 21:58:23 - Accuracy with Cosine-Similarity:           97.67	(Threshold: 0.7339)
+2023-11-16 21:58:23 - F1 with Cosine-Similarity:                 96.36	(Threshold: 0.7339)
+2023-11-16 21:58:23 - Precision with Cosine-Similarity:          98.33
+2023-11-16 21:58:23 - Recall with Cosine-Similarity:             94.46
+2023-11-16 21:58:23 - Average Precision with Cosine-Similarity:  98.85
+
+2023-11-16 21:58:23 - Accuracy with Manhattan-Distance:           97.53	(Threshold: 108.6856)
+2023-11-16 21:58:23 - F1 with Manhattan-Distance:                 96.13	(Threshold: 108.6856)
+2023-11-16 21:58:23 - Precision with Manhattan-Distance:          98.41
+2023-11-16 21:58:23 - Recall with Manhattan-Distance:             93.95
+2023-11-16 21:58:23 - Average Precision with Manhattan-Distance:  98.45
+
+2023-11-16 21:58:23 - Accuracy with Euclidean-Distance:           97.52	(Threshold: 4.3410)
+2023-11-16 21:58:23 - F1 with Euclidean-Distance:                 96.12	(Threshold: 4.3443)
+2023-11-16 21:58:23 - Precision with Euclidean-Distance:          98.28
+2023-11-16 21:58:23 - Recall with Euclidean-Distance:             94.06
+2023-11-16 21:58:23 - Average Precision with Euclidean-Distance:  98.43
+
+2023-11-16 21:58:23 - Accuracy with Dot-Product:           94.58	(Threshold: 17.1639)
+2023-11-16 21:58:23 - F1 with Dot-Product:                 91.86	(Threshold: 17.0803)
+2023-11-16 21:58:23 - Precision with Dot-Product:          89.99
+2023-11-16 21:58:23 - Recall with Dot-Product:             93.82
+2023-11-16 21:58:23 - Average Precision with Dot-Product:  84.76
+
+2023-11-16 22:10:51 - Binary Accuracy Evaluation of the model on  dataset in epoch 5 after 2500 steps:
+2023-11-16 22:14:21 - Accuracy with Cosine-Similarity:           97.55	(Threshold: 0.7933)
+2023-11-16 22:14:21 - F1 with Cosine-Similarity:                 96.18	(Threshold: 0.7876)
+2023-11-16 22:14:21 - Precision with Cosine-Similarity:          98.00
+2023-11-16 22:14:21 - Recall with Cosine-Similarity:             94.43
+2023-11-16 22:14:21 - Average Precision with Cosine-Similarity:  98.95
+
+2023-11-16 22:14:21 - Accuracy with Manhattan-Distance:           97.40	(Threshold: 103.4211)
+2023-11-16 22:14:21 - F1 with Manhattan-Distance:                 95.93	(Threshold: 103.4211)
+2023-11-16 22:14:21 - Precision with Manhattan-Distance:          98.05
+2023-11-16 22:14:21 - Recall with Manhattan-Distance:             93.91
+2023-11-16 22:14:21 - Average Precision with Manhattan-Distance:  98.52
+
+2023-11-16 22:14:21 - Accuracy with Euclidean-Distance:           97.41	(Threshold: 4.0722)
+2023-11-16 22:14:21 - F1 with Euclidean-Distance:                 95.94	(Threshold: 4.0722)
+2023-11-16 22:14:21 - Precision with Euclidean-Distance:          98.04
+2023-11-16 22:14:21 - Recall with Euclidean-Distance:             93.94
+2023-11-16 22:14:21 - Average Precision with Euclidean-Distance:  98.52
+
+2023-11-16 22:14:21 - Accuracy with Dot-Product:           93.10	(Threshold: 17.4385)
+2023-11-16 22:14:21 - F1 with Dot-Product:                 89.89	(Threshold: 17.1951)
+2023-11-16 22:14:21 - Precision with Dot-Product:          85.23
+2023-11-16 22:14:21 - Recall with Dot-Product:             95.10
+2023-11-16 22:14:21 - Average Precision with Dot-Product:  79.45
+
+2023-11-16 22:26:35 - Binary Accuracy Evaluation of the model on  dataset in epoch 5 after 5000 steps:
+2023-11-16 22:30:00 - Accuracy with Cosine-Similarity:           97.65	(Threshold: 0.7403)
+2023-11-16 22:30:00 - F1 with Cosine-Similarity:                 96.36	(Threshold: 0.7403)
+2023-11-16 22:30:00 - Precision with Cosine-Similarity:          97.38
+2023-11-16 22:30:00 - Recall with Cosine-Similarity:             95.35
+2023-11-16 22:30:00 - Average Precision with Cosine-Similarity:  99.00
+
+2023-11-16 22:30:00 - Accuracy with Manhattan-Distance:           97.51	(Threshold: 102.1800)
+2023-11-16 22:30:00 - F1 with Manhattan-Distance:                 96.11	(Threshold: 102.4011)
+2023-11-16 22:30:00 - Precision with Manhattan-Distance:          98.00
+2023-11-16 22:30:00 - Recall with Manhattan-Distance:             94.29
+2023-11-16 22:30:00 - Average Precision with Manhattan-Distance:  98.62
+
+2023-11-16 22:30:00 - Accuracy with Euclidean-Distance:           97.49	(Threshold: 4.0355)
+2023-11-16 22:30:00 - F1 with Euclidean-Distance:                 96.09	(Threshold: 4.0501)
+2023-11-16 22:30:00 - Precision with Euclidean-Distance:          97.94
+2023-11-16 22:30:00 - Recall with Euclidean-Distance:             94.32
+2023-11-16 22:30:00 - Average Precision with Euclidean-Distance:  98.61
+
+2023-11-16 22:30:01 - Accuracy with Dot-Product:           94.04	(Threshold: 17.3898)
+2023-11-16 22:30:01 - F1 with Dot-Product:                 91.14	(Threshold: 17.3676)
+2023-11-16 22:30:01 - Precision with Dot-Product:          88.54
+2023-11-16 22:30:01 - Recall with Dot-Product:             93.89
+2023-11-16 22:30:01 - Average Precision with Dot-Product:  83.32
+
+2023-11-16 22:42:23 - Binary Accuracy Evaluation of the model on  dataset in epoch 5 after 7500 steps:
+2023-11-16 22:45:52 - Accuracy with Cosine-Similarity:           97.64	(Threshold: 0.7489)
+2023-11-16 22:45:52 - F1 with Cosine-Similarity:                 96.34	(Threshold: 0.7489)
+2023-11-16 22:45:52 - Precision with Cosine-Similarity:          97.67
+2023-11-16 22:45:52 - Recall with Cosine-Similarity:             95.05
+2023-11-16 22:45:52 - Average Precision with Cosine-Similarity:  99.03
+
+2023-11-16 22:45:52 - Accuracy with Manhattan-Distance:           97.51	(Threshold: 106.6665)
+2023-11-16 22:45:52 - F1 with Manhattan-Distance:                 96.11	(Threshold: 106.6665)
+2023-11-16 22:45:52 - Precision with Manhattan-Distance:          98.06
+2023-11-16 22:45:52 - Recall with Manhattan-Distance:             94.24
+2023-11-16 22:45:52 - Average Precision with Manhattan-Distance:  98.59
+
+2023-11-16 22:45:52 - Accuracy with Euclidean-Distance:           97.52	(Threshold: 4.1811)
+2023-11-16 22:45:52 - F1 with Euclidean-Distance:                 96.12	(Threshold: 4.1887)
+2023-11-16 22:45:52 - Precision with Euclidean-Distance:          98.05
+2023-11-16 22:45:52 - Recall with Euclidean-Distance:             94.27
+2023-11-16 22:45:52 - Average Precision with Euclidean-Distance:  98.57
+
+2023-11-16 22:45:53 - Accuracy with Dot-Product:           94.70	(Threshold: 17.6501)
+2023-11-16 22:45:53 - F1 with Dot-Product:                 92.14	(Threshold: 17.4558)
+2023-11-16 22:45:53 - Precision with Dot-Product:          88.95
+2023-11-16 22:45:53 - Recall with Dot-Product:             95.57
+2023-11-16 22:45:53 - Average Precision with Dot-Product:  82.44
+
+2023-11-16 22:49:47 - Binary Accuracy Evaluation of the model on  dataset after epoch 5:
+2023-11-16 22:53:14 - Accuracy with Cosine-Similarity:           97.68	(Threshold: 0.7587)
+2023-11-16 22:53:14 - F1 with Cosine-Similarity:                 96.38	(Threshold: 0.7582)
+2023-11-16 22:53:14 - Precision with Cosine-Similarity:          98.33
+2023-11-16 22:53:14 - Recall with Cosine-Similarity:             94.52
+2023-11-16 22:53:14 - Average Precision with Cosine-Similarity:  98.95
+
+2023-11-16 22:53:14 - Accuracy with Manhattan-Distance:           97.60	(Threshold: 108.7513)
+2023-11-16 22:53:14 - F1 with Manhattan-Distance:                 96.25	(Threshold: 112.9336)
+2023-11-16 22:53:14 - Precision with Manhattan-Distance:          98.28
+2023-11-16 22:53:14 - Recall with Manhattan-Distance:             94.30
+2023-11-16 22:53:14 - Average Precision with Manhattan-Distance:  98.49
+
+2023-11-16 22:53:14 - Accuracy with Euclidean-Distance:           97.61	(Threshold: 4.3086)
+2023-11-16 22:53:14 - F1 with Euclidean-Distance:                 96.25	(Threshold: 4.4311)
+2023-11-16 22:53:14 - Precision with Euclidean-Distance:          98.30
+2023-11-16 22:53:14 - Recall with Euclidean-Distance:             94.29
+2023-11-16 22:53:14 - Average Precision with Euclidean-Distance:  98.48
+
+2023-11-16 22:53:14 - Accuracy with Dot-Product:           95.38	(Threshold: 17.6662)
+2023-11-16 22:53:14 - F1 with Dot-Product:                 93.12	(Threshold: 17.6390)
+2023-11-16 22:53:14 - Precision with Dot-Product:          90.67
+2023-11-16 22:53:14 - Recall with Dot-Product:             95.72
+2023-11-16 22:53:14 - Average Precision with Dot-Product:  84.02
+
+2023-11-16 23:05:40 - Binary Accuracy Evaluation of the model on  dataset in epoch 6 after 2500 steps:
+2023-11-16 23:09:11 - Accuracy with Cosine-Similarity:           97.61	(Threshold: 0.7562)
+2023-11-16 23:09:11 - F1 with Cosine-Similarity:                 96.28	(Threshold: 0.7533)
+2023-11-16 23:09:11 - Precision with Cosine-Similarity:          97.86
+2023-11-16 23:09:11 - Recall with Cosine-Similarity:             94.74
+2023-11-16 23:09:11 - Average Precision with Cosine-Similarity:  98.91
+
+2023-11-16 23:09:11 - Accuracy with Manhattan-Distance:           97.47	(Threshold: 113.3209)
+2023-11-16 23:09:11 - F1 with Manhattan-Distance:                 96.04	(Threshold: 113.3209)
+2023-11-16 23:09:11 - Precision with Manhattan-Distance:          98.21
+2023-11-16 23:09:11 - Recall with Manhattan-Distance:             93.95
+2023-11-16 23:09:11 - Average Precision with Manhattan-Distance:  98.38
+
+2023-11-16 23:09:11 - Accuracy with Euclidean-Distance:           97.46	(Threshold: 4.5212)
+2023-11-16 23:09:11 - F1 with Euclidean-Distance:                 96.04	(Threshold: 4.5212)
+2023-11-16 23:09:11 - Precision with Euclidean-Distance:          98.07
+2023-11-16 23:09:11 - Recall with Euclidean-Distance:             94.08
+2023-11-16 23:09:11 - Average Precision with Euclidean-Distance:  98.37
+
+2023-11-16 23:09:11 - Accuracy with Dot-Product:           94.19	(Threshold: 18.1814)
+2023-11-16 23:09:11 - F1 with Dot-Product:                 91.41	(Threshold: 18.1523)
+2023-11-16 23:09:11 - Precision with Dot-Product:          88.27
+2023-11-16 23:09:11 - Recall with Dot-Product:             94.79
+2023-11-16 23:09:11 - Average Precision with Dot-Product:  81.72
+
+2023-11-16 23:21:31 - Binary Accuracy Evaluation of the model on  dataset in epoch 6 after 5000 steps:
+2023-11-16 23:25:00 - Accuracy with Cosine-Similarity:           97.61	(Threshold: 0.7776)
+2023-11-16 23:25:00 - F1 with Cosine-Similarity:                 96.27	(Threshold: 0.7732)
+2023-11-16 23:25:00 - Precision with Cosine-Similarity:          97.88
+2023-11-16 23:25:00 - Recall with Cosine-Similarity:             94.72
+2023-11-16 23:25:00 - Average Precision with Cosine-Similarity:  98.95
+
+2023-11-16 23:25:00 - Accuracy with Manhattan-Distance:           97.44	(Threshold: 106.5569)
+2023-11-16 23:25:00 - F1 with Manhattan-Distance:                 96.00	(Threshold: 106.5569)
+2023-11-16 23:25:00 - Precision with Manhattan-Distance:          98.16
+2023-11-16 23:25:00 - Recall with Manhattan-Distance:             93.93
+2023-11-16 23:25:00 - Average Precision with Manhattan-Distance:  98.49
+
+2023-11-16 23:25:00 - Accuracy with Euclidean-Distance:           97.44	(Threshold: 4.1502)
+2023-11-16 23:25:00 - F1 with Euclidean-Distance:                 96.00	(Threshold: 4.1891)
+2023-11-16 23:25:00 - Precision with Euclidean-Distance:          98.14
+2023-11-16 23:25:00 - Recall with Euclidean-Distance:             93.95
+2023-11-16 23:25:00 - Average Precision with Euclidean-Distance:  98.48
+
+2023-11-16 23:25:01 - Accuracy with Dot-Product:           93.36	(Threshold: 19.2048)
+2023-11-16 23:25:01 - F1 with Dot-Product:                 90.31	(Threshold: 19.1826)
+2023-11-16 23:25:01 - Precision with Dot-Product:          86.18
+2023-11-16 23:25:01 - Recall with Dot-Product:             94.85
+2023-11-16 23:25:01 - Average Precision with Dot-Product:  80.31
+
+2023-11-16 23:37:29 - Binary Accuracy Evaluation of the model on  dataset in epoch 6 after 7500 steps:
+2023-11-16 23:40:59 - Accuracy with Cosine-Similarity:           97.61	(Threshold: 0.7435)
+2023-11-16 23:40:59 - F1 with Cosine-Similarity:                 96.29	(Threshold: 0.7435)
+2023-11-16 23:40:59 - Precision with Cosine-Similarity:          97.70
+2023-11-16 23:40:59 - Recall with Cosine-Similarity:             94.92
+2023-11-16 23:40:59 - Average Precision with Cosine-Similarity:  98.91
+
+2023-11-16 23:40:59 - Accuracy with Manhattan-Distance:           97.46	(Threshold: 106.4984)
+2023-11-16 23:40:59 - F1 with Manhattan-Distance:                 96.05	(Threshold: 120.9685)
+2023-11-16 23:40:59 - Precision with Manhattan-Distance:          97.63
+2023-11-16 23:40:59 - Recall with Manhattan-Distance:             94.52
+2023-11-16 23:40:59 - Average Precision with Manhattan-Distance:  98.32
+
+2023-11-16 23:40:59 - Accuracy with Euclidean-Distance:           97.47	(Threshold: 4.5780)
+2023-11-16 23:40:59 - F1 with Euclidean-Distance:                 96.05	(Threshold: 4.5780)
+2023-11-16 23:40:59 - Precision with Euclidean-Distance:          97.98
+2023-11-16 23:40:59 - Recall with Euclidean-Distance:             94.19
+2023-11-16 23:40:59 - Average Precision with Euclidean-Distance:  98.30
+
+2023-11-16 23:40:59 - Accuracy with Dot-Product:           94.66	(Threshold: 18.9305)
+2023-11-16 23:40:59 - F1 with Dot-Product:                 92.14	(Threshold: 18.6749)
+2023-11-16 23:40:59 - Precision with Dot-Product:          88.41
+2023-11-16 23:40:59 - Recall with Dot-Product:             96.21
+2023-11-16 23:40:59 - Average Precision with Dot-Product:  81.90
+
+2023-11-16 23:44:52 - Binary Accuracy Evaluation of the model on  dataset after epoch 6:
+2023-11-16 23:48:21 - Accuracy with Cosine-Similarity:           97.63	(Threshold: 0.7840)
+2023-11-16 23:48:21 - F1 with Cosine-Similarity:                 96.31	(Threshold: 0.7731)
+2023-11-16 23:48:21 - Precision with Cosine-Similarity:          98.04
+2023-11-16 23:48:21 - Recall with Cosine-Similarity:             94.65
+2023-11-16 23:48:21 - Average Precision with Cosine-Similarity:  98.95
+
+2023-11-16 23:48:21 - Accuracy with Manhattan-Distance:           97.44	(Threshold: 104.8757)
+2023-11-16 23:48:21 - F1 with Manhattan-Distance:                 95.99	(Threshold: 104.8757)
+2023-11-16 23:48:21 - Precision with Manhattan-Distance:          98.23
+2023-11-16 23:48:21 - Recall with Manhattan-Distance:             93.84
+2023-11-16 23:48:21 - Average Precision with Manhattan-Distance:  98.43
+
+2023-11-16 23:48:21 - Accuracy with Euclidean-Distance:           97.43	(Threshold: 4.1396)
+2023-11-16 23:48:21 - F1 with Euclidean-Distance:                 95.98	(Threshold: 4.1471)
+2023-11-16 23:48:21 - Precision with Euclidean-Distance:          98.16
+2023-11-16 23:48:21 - Recall with Euclidean-Distance:             93.90
+2023-11-16 23:48:21 - Average Precision with Euclidean-Distance:  98.41
+
+2023-11-16 23:48:21 - Accuracy with Dot-Product:           94.27	(Threshold: 17.6361)
+2023-11-16 23:48:21 - F1 with Dot-Product:                 91.61	(Threshold: 17.5430)
+2023-11-16 23:48:21 - Precision with Dot-Product:          87.69
+2023-11-16 23:48:21 - Recall with Dot-Product:             95.90
+2023-11-16 23:48:21 - Average Precision with Dot-Product:  82.64
+
+2023-11-17 00:00:50 - Binary Accuracy Evaluation of the model on  dataset in epoch 7 after 2500 steps:
+2023-11-17 00:04:16 - Accuracy with Cosine-Similarity:           97.66	(Threshold: 0.7933)
+2023-11-17 00:04:16 - F1 with Cosine-Similarity:                 96.37	(Threshold: 0.7614)
+2023-11-17 00:04:16 - Precision with Cosine-Similarity:          97.79
+2023-11-17 00:04:16 - Recall with Cosine-Similarity:             94.98
+2023-11-17 00:04:16 - Average Precision with Cosine-Similarity:  98.83
+
+2023-11-17 00:04:17 - Accuracy with Manhattan-Distance:           97.47	(Threshold: 107.6652)
+2023-11-17 00:04:17 - F1 with Manhattan-Distance:                 96.05	(Threshold: 112.6711)
+2023-11-17 00:04:17 - Precision with Manhattan-Distance:          97.82
+2023-11-17 00:04:17 - Recall with Manhattan-Distance:             94.33
+2023-11-17 00:04:17 - Average Precision with Manhattan-Distance:  98.25
+
+2023-11-17 00:04:17 - Accuracy with Euclidean-Distance:           97.48	(Threshold: 4.3491)
+2023-11-17 00:04:17 - F1 with Euclidean-Distance:                 96.06	(Threshold: 4.3491)
+2023-11-17 00:04:17 - Precision with Euclidean-Distance:          98.03
+2023-11-17 00:04:17 - Recall with Euclidean-Distance:             94.17
+2023-11-17 00:04:17 - Average Precision with Euclidean-Distance:  98.24
+
+2023-11-17 00:04:17 - Accuracy with Dot-Product:           93.99	(Threshold: 18.2852)
+2023-11-17 00:04:17 - F1 with Dot-Product:                 91.24	(Threshold: 18.2852)
+2023-11-17 00:04:17 - Precision with Dot-Product:          87.02
+2023-11-17 00:04:17 - Recall with Dot-Product:             95.90
+2023-11-17 00:04:17 - Average Precision with Dot-Product:  80.23
+
+2023-11-17 00:16:37 - Binary Accuracy Evaluation of the model on  dataset in epoch 7 after 5000 steps:
+2023-11-17 00:20:07 - Accuracy with Cosine-Similarity:           97.62	(Threshold: 0.7601)
+2023-11-17 00:20:07 - F1 with Cosine-Similarity:                 96.30	(Threshold: 0.7601)
+2023-11-17 00:20:07 - Precision with Cosine-Similarity:          98.02
+2023-11-17 00:20:07 - Recall with Cosine-Similarity:             94.64
+2023-11-17 00:20:07 - Average Precision with Cosine-Similarity:  98.78
+
+2023-11-17 00:20:07 - Accuracy with Manhattan-Distance:           97.50	(Threshold: 113.4590)
+2023-11-17 00:20:07 - F1 with Manhattan-Distance:                 96.09	(Threshold: 113.4590)
+2023-11-17 00:20:07 - Precision with Manhattan-Distance:          98.34
+2023-11-17 00:20:07 - Recall with Manhattan-Distance:             93.95
+2023-11-17 00:20:07 - Average Precision with Manhattan-Distance:  98.20
+
+2023-11-17 00:20:07 - Accuracy with Euclidean-Distance:           97.50	(Threshold: 4.4428)
+2023-11-17 00:20:07 - F1 with Euclidean-Distance:                 96.09	(Threshold: 4.7362)
+2023-11-17 00:20:07 - Precision with Euclidean-Distance:          97.87
+2023-11-17 00:20:07 - Recall with Euclidean-Distance:             94.38
+2023-11-17 00:20:07 - Average Precision with Euclidean-Distance:  98.19
+
+2023-11-17 00:20:07 - Accuracy with Dot-Product:           94.48	(Threshold: 19.2536)
+2023-11-17 00:20:07 - F1 with Dot-Product:                 91.87	(Threshold: 19.2536)
+2023-11-17 00:20:07 - Precision with Dot-Product:          88.46
+2023-11-17 00:20:07 - Recall with Dot-Product:             95.55
+2023-11-17 00:20:07 - Average Precision with Dot-Product:  80.98
+
+2023-11-17 00:32:37 - Binary Accuracy Evaluation of the model on  dataset in epoch 7 after 7500 steps:
+2023-11-17 00:36:08 - Accuracy with Cosine-Similarity:           97.61	(Threshold: 0.7643)
+2023-11-17 00:36:08 - F1 with Cosine-Similarity:                 96.29	(Threshold: 0.7509)
+2023-11-17 00:36:08 - Precision with Cosine-Similarity:          97.59
+2023-11-17 00:36:08 - Recall with Cosine-Similarity:             95.02
+2023-11-17 00:36:08 - Average Precision with Cosine-Similarity:  98.87
+
+2023-11-17 00:36:08 - Accuracy with Manhattan-Distance:           97.48	(Threshold: 111.0981)
+2023-11-17 00:36:08 - F1 with Manhattan-Distance:                 96.06	(Threshold: 111.0981)
+2023-11-17 00:36:08 - Precision with Manhattan-Distance:          98.33
+2023-11-17 00:36:08 - Recall with Manhattan-Distance:             93.89
+2023-11-17 00:36:08 - Average Precision with Manhattan-Distance:  98.20
+
+2023-11-17 00:36:08 - Accuracy with Euclidean-Distance:           97.48	(Threshold: 4.5599)
+2023-11-17 00:36:08 - F1 with Euclidean-Distance:                 96.06	(Threshold: 4.5599)
+2023-11-17 00:36:08 - Precision with Euclidean-Distance:          98.01
+2023-11-17 00:36:08 - Recall with Euclidean-Distance:             94.19
+2023-11-17 00:36:08 - Average Precision with Euclidean-Distance:  98.18
+
+2023-11-17 00:36:08 - Accuracy with Dot-Product:           94.27	(Threshold: 19.8670)
+2023-11-17 00:36:08 - F1 with Dot-Product:                 91.68	(Threshold: 19.6590)
+2023-11-17 00:36:08 - Precision with Dot-Product:          87.03
+2023-11-17 00:36:08 - Recall with Dot-Product:             96.86
+2023-11-17 00:36:08 - Average Precision with Dot-Product:  80.33
+
+2023-11-17 00:40:02 - Binary Accuracy Evaluation of the model on  dataset after epoch 7:
+2023-11-17 00:43:30 - Accuracy with Cosine-Similarity:           97.62	(Threshold: 0.7286)
+2023-11-17 00:43:30 - F1 with Cosine-Similarity:                 96.31	(Threshold: 0.7272)
+2023-11-17 00:43:30 - Precision with Cosine-Similarity:          97.48
+2023-11-17 00:43:30 - Recall with Cosine-Similarity:             95.17
+2023-11-17 00:43:30 - Average Precision with Cosine-Similarity:  98.85
+
+2023-11-17 00:43:31 - Accuracy with Manhattan-Distance:           97.47	(Threshold: 116.4954)
+2023-11-17 00:43:31 - F1 with Manhattan-Distance:                 96.05	(Threshold: 118.3230)
+2023-11-17 00:43:31 - Precision with Manhattan-Distance:          98.07
+2023-11-17 00:43:31 - Recall with Manhattan-Distance:             94.11
+2023-11-17 00:43:31 - Average Precision with Manhattan-Distance:  98.17
+
+2023-11-17 00:43:31 - Accuracy with Euclidean-Distance:           97.47	(Threshold: 4.8186)
+2023-11-17 00:43:31 - F1 with Euclidean-Distance:                 96.06	(Threshold: 4.8186)
+2023-11-17 00:43:31 - Precision with Euclidean-Distance:          97.78
+2023-11-17 00:43:31 - Recall with Euclidean-Distance:             94.40
+2023-11-17 00:43:31 - Average Precision with Euclidean-Distance:  98.15
+
+2023-11-17 00:43:31 - Accuracy with Dot-Product:           94.70	(Threshold: 19.8464)
+2023-11-17 00:43:31 - F1 with Dot-Product:                 92.25	(Threshold: 19.7657)
+2023-11-17 00:43:31 - Precision with Dot-Product:          88.30
+2023-11-17 00:43:31 - Recall with Dot-Product:             96.58
+2023-11-17 00:43:31 - Average Precision with Dot-Product:  81.27
+
+2023-11-17 00:55:53 - Binary Accuracy Evaluation of the model on  dataset in epoch 8 after 2500 steps:
+2023-11-17 00:59:26 - Accuracy with Cosine-Similarity:           97.59	(Threshold: 0.7428)
+2023-11-17 00:59:26 - F1 with Cosine-Similarity:                 96.27	(Threshold: 0.7378)
+2023-11-17 00:59:26 - Precision with Cosine-Similarity:          97.44
+2023-11-17 00:59:26 - Recall with Cosine-Similarity:             95.13
+2023-11-17 00:59:26 - Average Precision with Cosine-Similarity:  98.82
+
+2023-11-17 00:59:26 - Accuracy with Manhattan-Distance:           97.45	(Threshold: 116.1695)
+2023-11-17 00:59:26 - F1 with Manhattan-Distance:                 96.02	(Threshold: 122.0179)
+2023-11-17 00:59:26 - Precision with Manhattan-Distance:          97.70
+2023-11-17 00:59:26 - Recall with Manhattan-Distance:             94.40
+2023-11-17 00:59:26 - Average Precision with Manhattan-Distance:  98.14
+
+2023-11-17 00:59:27 - Accuracy with Euclidean-Distance:           97.45	(Threshold: 4.4841)
+2023-11-17 00:59:27 - F1 with Euclidean-Distance:                 96.01	(Threshold: 4.5434)
+2023-11-17 00:59:27 - Precision with Euclidean-Distance:          98.09
+2023-11-17 00:59:27 - Recall with Euclidean-Distance:             94.02
+2023-11-17 00:59:27 - Average Precision with Euclidean-Distance:  98.12
+
+2023-11-17 00:59:27 - Accuracy with Dot-Product:           94.47	(Threshold: 20.0786)
+2023-11-17 00:59:27 - F1 with Dot-Product:                 91.92	(Threshold: 20.0786)
+2023-11-17 00:59:27 - Precision with Dot-Product:          87.97
+2023-11-17 00:59:27 - Recall with Dot-Product:             96.23
+2023-11-17 00:59:27 - Average Precision with Dot-Product:  80.29
+
+2023-11-17 01:12:01 - Binary Accuracy Evaluation of the model on  dataset in epoch 8 after 5000 steps:
+2023-11-17 01:15:32 - Accuracy with Cosine-Similarity:           97.60	(Threshold: 0.7821)
+2023-11-17 01:15:32 - F1 with Cosine-Similarity:                 96.26	(Threshold: 0.7815)
+2023-11-17 01:15:32 - Precision with Cosine-Similarity:          97.99
+2023-11-17 01:15:32 - Recall with Cosine-Similarity:             94.58
+2023-11-17 01:15:32 - Average Precision with Cosine-Similarity:  98.82
+
+2023-11-17 01:15:32 - Accuracy with Manhattan-Distance:           97.49	(Threshold: 116.0197)
+2023-11-17 01:15:32 - F1 with Manhattan-Distance:                 96.08	(Threshold: 116.9316)
+2023-11-17 01:15:32 - Precision with Manhattan-Distance:          98.16
+2023-11-17 01:15:32 - Recall with Manhattan-Distance:             94.09
+2023-11-17 01:15:32 - Average Precision with Manhattan-Distance:  98.12
+
+2023-11-17 01:15:32 - Accuracy with Euclidean-Distance:           97.49	(Threshold: 4.5282)
+2023-11-17 01:15:32 - F1 with Euclidean-Distance:                 96.08	(Threshold: 4.5317)
+2023-11-17 01:15:32 - Precision with Euclidean-Distance:          98.22
+2023-11-17 01:15:32 - Recall with Euclidean-Distance:             94.03
+2023-11-17 01:15:32 - Average Precision with Euclidean-Distance:  98.10
+
+2023-11-17 01:15:32 - Accuracy with Dot-Product:           94.46	(Threshold: 20.5871)
+2023-11-17 01:15:32 - F1 with Dot-Product:                 91.93	(Threshold: 20.2929)
+2023-11-17 01:15:32 - Precision with Dot-Product:          87.63
+2023-11-17 01:15:32 - Recall with Dot-Product:             96.67
+2023-11-17 01:15:32 - Average Precision with Dot-Product:  80.10
+
+2023-11-17 01:27:58 - Binary Accuracy Evaluation of the model on  dataset in epoch 8 after 7500 steps:
+2023-11-17 01:31:25 - Accuracy with Cosine-Similarity:           97.61	(Threshold: 0.7657)
+2023-11-17 01:31:25 - F1 with Cosine-Similarity:                 96.27	(Threshold: 0.7657)
+2023-11-17 01:31:25 - Precision with Cosine-Similarity:          97.90
+2023-11-17 01:31:25 - Recall with Cosine-Similarity:             94.70
+2023-11-17 01:31:25 - Average Precision with Cosine-Similarity:  98.79
+
+2023-11-17 01:31:25 - Accuracy with Manhattan-Distance:           97.50	(Threshold: 120.5349)
+2023-11-17 01:31:25 - F1 with Manhattan-Distance:                 96.09	(Threshold: 120.5349)
+2023-11-17 01:31:25 - Precision with Manhattan-Distance:          98.10
+2023-11-17 01:31:25 - Recall with Manhattan-Distance:             94.16
+2023-11-17 01:31:25 - Average Precision with Manhattan-Distance:  98.11
+
+2023-11-17 01:31:25 - Accuracy with Euclidean-Distance:           97.52	(Threshold: 4.7371)
+2023-11-17 01:31:25 - F1 with Euclidean-Distance:                 96.12	(Threshold: 4.7371)
+2023-11-17 01:31:25 - Precision with Euclidean-Distance:          98.09
+2023-11-17 01:31:25 - Recall with Euclidean-Distance:             94.23
+2023-11-17 01:31:25 - Average Precision with Euclidean-Distance:  98.10
+
+2023-11-17 01:31:25 - Accuracy with Dot-Product:           94.71	(Threshold: 20.0984)
+2023-11-17 01:31:25 - F1 with Dot-Product:                 92.28	(Threshold: 20.0917)
+2023-11-17 01:31:25 - Precision with Dot-Product:          88.13
+2023-11-17 01:31:25 - Recall with Dot-Product:             96.85
+2023-11-17 01:31:25 - Average Precision with Dot-Product:  80.59
+
+2023-11-17 01:35:17 - Binary Accuracy Evaluation of the model on  dataset after epoch 8:
+2023-11-17 01:38:51 - Accuracy with Cosine-Similarity:           97.60	(Threshold: 0.7708)
+2023-11-17 01:38:51 - F1 with Cosine-Similarity:                 96.26	(Threshold: 0.7694)
+2023-11-17 01:38:51 - Precision with Cosine-Similarity:          97.92
+2023-11-17 01:38:51 - Recall with Cosine-Similarity:             94.66
+2023-11-17 01:38:51 - Average Precision with Cosine-Similarity:  98.80
+
+2023-11-17 01:38:52 - Accuracy with Manhattan-Distance:           97.50	(Threshold: 120.4270)
+2023-11-17 01:38:52 - F1 with Manhattan-Distance:                 96.10	(Threshold: 120.4270)
+2023-11-17 01:38:52 - Precision with Manhattan-Distance:          98.08
+2023-11-17 01:38:52 - Recall with Manhattan-Distance:             94.19
+2023-11-17 01:38:52 - Average Precision with Manhattan-Distance:  98.12
+
+2023-11-17 01:38:52 - Accuracy with Euclidean-Distance:           97.51	(Threshold: 4.6887)
+2023-11-17 01:38:52 - F1 with Euclidean-Distance:                 96.11	(Threshold: 4.7036)
+2023-11-17 01:38:52 - Precision with Euclidean-Distance:          98.11
+2023-11-17 01:38:52 - Recall with Euclidean-Distance:             94.19
+2023-11-17 01:38:52 - Average Precision with Euclidean-Distance:  98.11
+
+2023-11-17 01:38:52 - Accuracy with Dot-Product:           94.65	(Threshold: 20.1111)
+2023-11-17 01:38:52 - F1 with Dot-Product:                 92.20	(Threshold: 20.1111)
+2023-11-17 01:38:52 - Precision with Dot-Product:          87.96
+2023-11-17 01:38:52 - Recall with Dot-Product:             96.88
+2023-11-17 01:38:52 - Average Precision with Dot-Product:  80.45
+
